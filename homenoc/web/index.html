@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#FBFCFC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151B21" media="(prefers-color-scheme: dark)">
+<meta name="description" content="HomeNOC: descobre os aparelhos da rede de casa, desenha a topologia, monitora a internet e avisa quando algo cai.">
+<title>HomeNOC</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<button type="button" class="pular" id="pular">Pular para o conteúdo</button>
+<div class="app" id="app" hidden>
+  <aside class="rail" aria-label="Menu">
+    <a class="marca" href="#painel" aria-label="HomeNOC, início">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="7" width="28" height="18" rx="4" fill="#172028"/><rect x="7" y="13" width="7" height="6" rx="1" fill="#05080A"/><rect x="18" y="13" width="7" height="6" rx="1" fill="#05080A"/><circle cx="8.6" cy="11" r="1.4" fill="#0CA30C"/><circle cx="19.6" cy="11" r="1.4" fill="#0CA30C"/></svg>
+      <span><b>HomeNOC</b><small>A rede de casa, num painel</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Seções"></nav>
+    <div class="rail-rodape">
+      <div class="varredura-mini" id="varredura-rail"></div>
+      <div class="tema" role="group" aria-label="Tema">
+        <button type="button" data-tema="auto">Automático</button>
+        <button type="button" data-tema="light">Claro</button>
+        <button type="button" data-tema="dark">Escuro</button>
+      </div>
+    </div>
+  </aside>
+  <header class="topo">
+    <a class="marca" href="#painel" aria-label="HomeNOC, início">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="2" y="7" width="28" height="18" rx="4" fill="#172028"/><rect x="7" y="13" width="7" height="6" rx="1" fill="#05080A"/><rect x="18" y="13" width="7" height="6" rx="1" fill="#05080A"/><circle cx="8.6" cy="11" r="1.4" fill="#0CA30C"/><circle cx="19.6" cy="11" r="1.4" fill="#0CA30C"/></svg>
+      <b>HomeNOC</b>
+    </a>
+    <div class="varredura-mini" id="varredura-topo"></div>
+  </header>
+  <main class="conteudo" id="conteudo" tabindex="-1">
+    <div class="visao" id="faixas"></div>
+    <div id="visao"></div>
+  </main>
+  <nav class="abas" id="abas" aria-label="Seções"></nav>
+</div>
+<div class="entrada" id="entrada" hidden></div>
+<div class="gaveta" id="gaveta" hidden>
+  <div class="gaveta-fundo" data-fechar></div>
+  <aside class="gaveta-painel" id="gaveta-painel" role="dialog" aria-modal="true" aria-labelledby="gaveta-titulo"></aside>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<noscript>O HomeNOC precisa de JavaScript ligado.</noscript>
+<script src="qrcode.js"></script>
+<script src="graficos.js"></script>
+<script src="mapa.js"></script>
+<script src="demo.js"></script>
+<script src="nucleo.js"></script>
+<script src="gaveta.js"></script>
+<script src="painel.js"></script>
+<script src="rede.js"></script>
+<script src="historico.js"></script>
+<script src="ajustes.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

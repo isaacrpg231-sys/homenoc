@@ -1,0 +1,11 @@
+{
+  "name": "HomeNOC",
+  "short_name": "HomeNOC",
+  "description": "A rede de casa, num painel: aparelhos, topologia, internet e alertas.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0E1216",
+  "theme_color": "#151B21",
+  "lang": "pt-BR",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

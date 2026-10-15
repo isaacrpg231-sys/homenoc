@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "homenoc"
+version = "1.0.0"
+description = "Mini-NOC para a rede de casa: descobre os aparelhos, desenha a topologia, monitora a internet e avisa no celular."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Isaac Ramos Pereira" }]
+keywords = ["monitoramento", "redes", "noc", "zabbix", "upnp", "telegram"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: System :: Networking :: Monitoring",
+]
+dependencies = []          # só a biblioteca padrão do Python
+
+[project.scripts]
+homenoc = "homenoc.app:main"
+
+[project.urls]
+"Código" = "https://github.com/isaacrpg231-sys/homenoc"
+
+[tool.setuptools]
+packages = ["homenoc"]
+
+[tool.setuptools.package-data]
+homenoc = ["web/*", "web/fonts/*"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "BLE", "RUF100"]

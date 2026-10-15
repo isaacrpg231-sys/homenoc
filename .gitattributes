@@ -1,0 +1,8 @@
+# Finais de linha fixos, para o projeto funcionar igual em qualquer clone.
+# LF em tudo (o upnp.py é copiado para uma VM Linux e precisa de LF para rodar);
+# CRLF só nos .bat, que o cmd.exe do Windows lê melhor assim.
+* text=auto eol=lf
+*.bat text eol=crlf
+
+*.png binary
+*.woff2 binary

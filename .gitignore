@@ -1,0 +1,32 @@
+# dados locais do HomeNOC (inventário, histórico, config com tokens)
+dados/
+*.db
+*.db-wal
+*.db-shm
+*.log
+
+# Python
+__pycache__/
+*.pyc
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+.venv/
+
+# briefing da conversa com o Claude (não publicar)
+BRIEFING_CLAUDE_CODE.md
+
+# configuração local do Claude Code
+.claude/
+
+# arquivos do sistema e dos editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+venv/
+
+# vídeos de demonstração (ficam fora do repositório)
+*.mp4
