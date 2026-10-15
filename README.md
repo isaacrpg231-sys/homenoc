@@ -169,14 +169,16 @@ homenoc/
 - A descoberta é só IPv4.
 - O monitoramento roda enquanto o computador estiver ligado (o Healthchecks.io avisa quando ele para).
 
-## Autor
+## Autor e como o projeto foi feito
 
 **Isaac Ramos Pereira**, estudante de Técnico em Redes (cursos Cisco: IT Essentials, CCNA ITN e CCNA SRWE).
 
+O HomeNOC é um projeto meu: a ideia, o que ele deveria fazer e as decisões de como ele funciona vieram de mim, a partir de três versões anteriores (um monitor com alertas no Telegram, a integração com o Zabbix e um mapa de topologia). Eu coloquei o HomeNOC para rodar e testei na minha própria rede.
+
+O código foi escrito pelo Claude, a IA da Anthropic, a partir das minhas especificações e correções.
+
 - LinkedIn: [isaac-ramos-pereira](https://www.linkedin.com/in/isaac-ramos-pereira-526273328)
 - GitHub: [isaacrpg231-sys](https://github.com/isaacrpg231-sys)
-
-Desenvolvido com apoio de IA (Claude, da Anthropic) como assistente de programação.
 
 ## Licença
 
